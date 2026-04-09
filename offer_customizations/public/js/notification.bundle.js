@@ -214,7 +214,7 @@ function createQuickChatButton(rootElement) {
     // Load notifications and update the count
     function loadNotifications(countElement, userTriggered = false) {
         frappe.call({
-            method: "offer_customizations.custmizations.notification.get_unread_notifications",
+            method: "offer_customizations.customizations.notification.get_unread_notifications",
             callback: function (response) {
                 const notifications = response.message;
                 const notificationList = $('#notification-list');
@@ -289,7 +289,7 @@ function createQuickChatButton(rootElement) {
     // Mark notification as read and update the badge
     function markAsRead(notificationName) {
         return frappe.call({
-            method: "offer_customizations.custmizations.notification.mark_notification_as_read",
+            method: "offer_customizations.customizations.notification.mark_notification_as_read",
             args: { notification_name: notificationName },
             callback: function (response) {
                 // After marking as read, reload notifications without playing the sound

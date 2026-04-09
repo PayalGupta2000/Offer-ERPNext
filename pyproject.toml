@@ -3,7 +3,7 @@ name = "offer_customizations"
 authors = [
     { name = "Extension", email = "dev@gmail.com"}
 ]
-description = "Offer Custmizations"
+description = "Offer customizations"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

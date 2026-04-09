@@ -1,7 +1,7 @@
 app_name = "offer_customizations"
 app_title = "Offer Customizations"
 app_publisher = "ALTAMASH"
-app_description = "Offer Custmizations"
+app_description = "Offer customizations"
 app_email = "dev@gmail.com"
 app_license = "mit"
 
@@ -23,7 +23,7 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
-app_include_css = ["/assets/offer_customizations/css/offer_customizations.css"]
+# app_include_css = ["/assets/offer_customizations/css/offer_customizations.css"]
 
 # Website (login page only)
 web_include_css = "/assets/offer_customizations/css/login.css"
@@ -48,12 +48,12 @@ app_include_js = "notification.bundle.js"
 
 
 # include js in doctype views
-doctype_js = {"Timesheet": "custmizations/timesheet.js",
+doctype_js = {"Timesheet": "customizations/timesheet.js",
 }
 
 doc_events = {
     "ToDo": {
-        "on_update": "offer_customizations.custmizations.todo.todo.notify_assigned_user"
+        "on_update": "offer_customizations.customizations.todo.todo.notify_assigned_user"
     },
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
