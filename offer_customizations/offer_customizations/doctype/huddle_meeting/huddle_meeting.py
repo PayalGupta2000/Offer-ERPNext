@@ -370,17 +370,17 @@ def create_timesheet(hm_name, user_task_map):
 
                     expected_hours = task_doc.expected_time or 1.0
 
-                    doc.append('time_logs', {
-                        'task': task_name,
-                        'project': task_doc.project,
-                        'subject': task_doc.subject,
-                        'employee': employee_details.name,
-                        'hours': expected_hours,
-                        'expected_hours': expected_hours,
-                        'from_time': frappe.utils.now_datetime().replace(hour=9, minute=0, second=0),
-                        'to_time': frappe.utils.now_datetime().replace(hour=9, minute=0, second=0) + frappe.utils.datetime.timedelta(hours=expected_hours),
-                        'completed': 0,
-                    })
+                    # doc.append('time_logs', {
+                    #     'task': task_name,
+                    #     'project': task_doc.project,
+                    #     'subject': task_doc.subject,
+                    #     'employee': employee_details.name,
+                    #     'hours': expected_hours,
+                    #     'expected_hours': expected_hours,
+                    #     'from_time': frappe.utils.now_datetime().replace(hour=9, minute=0, second=0),
+                    #     'to_time': frappe.utils.now_datetime().replace(hour=9, minute=0, second=0) + frappe.utils.datetime.timedelta(hours=expected_hours),
+                    #     'completed': 0,
+                    # })
 
                 doc.flags.ignore_mandatory = True
                 doc.save(ignore_permissions=True)

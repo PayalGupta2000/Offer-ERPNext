@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "date",
   "get_tasks",
   "create_timesheet",
   "column_break_sxsn",
@@ -55,12 +56,17 @@
    "fieldname": "get_tasks",
    "fieldtype": "Button",
    "label": "Get Task"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 13:19:10.285540",
+ "modified": "2026-04-13 21:47:24.708827",
  "modified_by": "Administrator",
  "module": "Offer Customizations",
  "name": "Huddle Meeting",
